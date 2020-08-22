@@ -11,7 +11,7 @@
 </p>
 <br><br>
 
-<p align="center"><a href="#"><img src="https://github.com/rocktimsaikia/syzer/blob/master/.github/frame.png" height="300px"></a></p>
+<p align="center"><a href="#"><img src="https://github.com/rocktimsaikia/syzer/blob/master/.github/frame.png" height="400px"></a></p>
 
 > A yeoman generator for scaffolding your javascript Github Action. 🦄
 
