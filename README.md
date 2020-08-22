@@ -1,4 +1,4 @@
-<p align="center"><img src="https://github.com/rocktimsaikia/syzer/blob/master/.github/logo.png?raw=true" height="50px"></p>
+<p align="center"><img src="https://github.com/rocktimsaikia/generator-github-action/blob/master/.github/logo.png?raw=true" height="50px"></p>
 
 <h1 align="center"> generator-github-action</h1>
 
@@ -11,7 +11,7 @@
 </p>
 <br><br>
 
-<p align="center"><a href="#"><img src="https://github.com/rocktimsaikia/syzer/blob/master/.github/frame.png" height="400px"></a></p>
+<p align="center"><a href="#"><img src="https://github.com/rocktimsaikia/generator-github-action/blob/master/.github/frame.png" height="400px"></a></p>
 
 > A yeoman generator for scaffolding your javascript Github Action. 🦄
 
