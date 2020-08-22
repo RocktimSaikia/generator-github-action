@@ -1,0 +1,35 @@
+{
+  "name": "<%= appTitle %>",
+  "version": "1.0.0",
+  "description": "<%= appDescription %>",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "prepare": "ncc build index.js -o dist --source-map",
+    "test": "jest --verbose",
+    "all": "npm run lint && npm run prepare && npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/<%= author.username %>/<%= appTitle %>.git"
+  },
+  "keywords": ["GitHub", "Actions", "JavaScript"],
+  "author": {
+    "name": "<%= author.name %>",
+    "email": "<%= author.email %>",
+    "website": "<%= author.website %>"
+  },
+  "bugs": {
+    "url": "https://github.com/<%= author.username %>/<%= appTitle %>/issues"
+  },
+  "homepage": "https://github.com/<%= author.username %>/<%= appTitle %>#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.4",
+    "@actions/github": "^4.0.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.23.0",
+    "eslint": "^7.4.0",
+    "jest": "^26.1.0"
+  }
+}
