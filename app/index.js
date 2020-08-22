@@ -20,7 +20,7 @@ module.exports = class extends Generator {
 			{
 				type: 'input',
 				name: 'actionDescription',
-				message: 'Add a project description ?',
+				message: 'Add The project description ?',
 				default: `My ${superb.random()} action`
 			},
 			{
@@ -32,12 +32,12 @@ module.exports = class extends Generator {
 			{
 				type: 'input',
 				name: 'website',
-				message: 'Add the your website url?',
-				filter: (x) => normalizeUrl(x)
+				message: 'Add your website url?',
+				filter: x => normalizeUrl(x)
 			}
 		];
 
-		return this.prompt(prompts).then((answers) => {
+		return this.prompt(prompts).then(answers => {
 			this.props = answers;
 		});
 	}
