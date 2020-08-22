@@ -1,4 +1,0 @@
-{
-  "ignore": "app/templates/**",
-  "prettier": true
-}
