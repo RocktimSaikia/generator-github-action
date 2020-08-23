@@ -39,6 +39,7 @@
 	"xo": {
 		"ignores": [
 			"app/templates/**"
-		]
+		],
+		"object-curly-spacing": "off"
 	}
 }

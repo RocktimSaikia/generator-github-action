@@ -43,10 +43,6 @@ module.exports = class extends Generator {
 	}
 
 	writing() {
-		const mv = (from, to) => {
-			this.fs.move(this.destinationPath(from), this.destinationPath(to));
-		};
-
 		const tpl = {
 			actionName: this.props.actionName,
 			actionDescription: this.props.actionDescription,
@@ -56,14 +52,21 @@ module.exports = class extends Generator {
 			normalizedWebsite: this.props.website
 		};
 
-		this.fs.copyTpl([`${this.templatePath()}/**`], this.destinationPath(), tpl);
+		const mv = (from, to) => {
+			this.fs.copyTpl(this.templatePath(from), this.destinationPath(to), tpl);
+		};
 
+		// This.fs.copyTpl([`${this.templatePath()}/*`, '!**github'], this.destinationPath(), tpl);
+		mv('github', '.github');
+		mv('dist', 'dist');
+		mv('_action.yml', 'action.yml');
+		mv('_package.json', 'package.json');
 		mv('editorconfig', '.editorconfig');
 		mv('gitattributes', '.gitattributes');
 		mv('gitignore', '.gitignore');
-		mv('_package.json', 'package.json');
-		mv('_action.yml', 'action.yml');
-		mv('github', '.github');
+		mv('index.js', 'index.js');
+		mv('license', 'license');
+		mv('README.md', 'README.md');
 	}
 
 	git() {
