@@ -1,21 +1,20 @@
-<p align="center"><img src="https://github.com/rocktimsaikia/generator-github-action/blob/master/.github/logo.png?raw=true" height="50px"></p>
+<p align="center"><img src="https://github.com/rocktimsaikia/generator-github-action/blob/master/.github/logo.png?raw=true" height="40px"></p>
 
 <h1 align="center"> generator-github-action</h1>
 
-<p align="center"> Yeoman generator for javascrpt <a href="https://github.com/actions/javascript-action">Github action</a></p>
+<p align="center">A yeoman generator for scaffolding your javascript <a href="https://github.com/features/actions">Github action</a></p>
 
 <p align="center">
 <img src="https://github.com/rocktimsaikia/generator-github-action/workflows/build/badge.svg"/>
 <img alt="NPM" src="https://img.shields.io/npm/l/generator-github-action"/>
 <img alt="npm" src="https://img.shields.io/npm/v/generator-github-action"/>
 </p>
-<br><br>
 
-<p align="center"><a href="#"><img src="https://github.com/rocktimsaikia/generator-github-action/blob/master/.github/frame.png" height="400px"></a></p>
+<p align="center"><a href="https://github.com/rocktimsaikia/generator-github-action"><img src="https://github.com/rocktimsaikia/generator-github-action/blob/master/.github/frame.png" height="400px"></a></p>
 
-> A yeoman generator for scaffolding your javascript Github Action. 🦄
 
 ### Installation
+> skip the first step if you already have yeoman installed globally.
 
 ```bash
 npm install -g yo
@@ -29,16 +28,18 @@ yo github-action
 ```
 
 ### What's included ?
+This template was created for leveling up productivity and wasting less time on setting up boilerplate while creating a github action.
+This generator takes care of setting up the base environment and installing the bare minimum essential dependencies.
 
-- It uses the [github's original javascript action boilerplate][github-action] as it's base template.
-- It uses [@vercel/ncc][vercel] for compiling the module instead of [@zeit/ncc][zeit] which has been deprecated.
+> It uses this [bare minimum github action boilerplate][boilerplate] as it's base template
+
 
 ### License
 
 Apache-2.0 © [Rocktim Saikia](https://rocktim.xyz)
 
+[boilerplate]: https://github.com/RocktimSaikia/javascript-action-boilerplate
 [vercel]: https://www.npmjs.com/package/@vercel/ncc
 [zeit]: https://www.npmjs.com/package/@zeit/ncc
-[github-action]: https://github.com/actions/javascript-action
 [npm-image]: https://badge.fury.io/js/generator-github-action.svg
 [npm-url]: https://npmjs.org/package/generator-github-action
