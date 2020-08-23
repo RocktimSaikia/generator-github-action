@@ -7,8 +7,7 @@ test.before(async () => {
 	await helpers.run(path.join(__dirname, 'app')).withPrompts({
 		actionName: 'test',
 		actionDescription: 'testDescription',
-		githubUserName: 'johndoe',
-		website: 'http://johndoe.com'
+		githubUserName: 'johndoe'
 	});
 });
 
@@ -25,7 +24,7 @@ test('generates expected files', t => {
 		'index.js',
 		'license',
 		'package.json',
-		'readme.md'
+		'README.md'
 	]);
 	t.pass();
 });
@@ -34,18 +33,16 @@ test('app:package.json should contains user inputs', t => {
 	assert.fileContent('package.json', 'test');
 	assert.fileContent('package.json', 'testDescription');
 	assert.fileContent('package.json', 'johndoe');
-	assert.fileContent('package.json', 'http://johndoe.com');
 	t.pass();
 });
 
 test('app:license should contains user inputs', t => {
 	assert.fileContent('license', 'johndoe');
-	assert.fileContent('license', 'http://johndoe.com');
 	t.pass();
 });
 
 test('app:README should contains user inputs', t => {
-	assert.fileContent('readme.md', 'test');
-	assert.fileContent('readme.md', 'testDescription');
+	assert.fileContent('README.md', 'test');
+	assert.fileContent('README.md', 'testDescription');
 	t.pass();
 });
