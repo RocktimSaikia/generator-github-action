@@ -10,7 +10,7 @@
 <img alt="npm" src="https://img.shields.io/npm/v/generator-github-action"/>
 </p>
 
-<p align="center"><a href="https://github.com/rocktimsaikia/generator-github-action"><img src="https://github.com/rocktimsaikia/generator-github-action/blob/master/.github/frame.png" height="400px"></a></p>
+<p align="center"><a href="https://github.com/rocktimsaikia/generator-github-action"><img src="/.github/frame.png" height="400px"></a></p>
 
 
 ### Installation
