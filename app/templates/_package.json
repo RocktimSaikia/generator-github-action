@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"description": "<%= actionDescription %>",
 	"license": "MIT",
-	"repository": "<%= githubUserName %>/actionName",
+	"repository": "<%= githubUserName %>/<%= actionName %>",
 	"author": {
 		"name": "<%= githubUserName %>",
 		"email": "<%= email %>",
