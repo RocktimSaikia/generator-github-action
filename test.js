@@ -45,7 +45,7 @@ test('app:license should contains user inputs', t => {
 });
 
 test('app:README should contains user inputs', t => {
-	assert.fileContent('README.md', 'test');
-	assert.fileContent('README.md', 'testDescription');
+	assert.fileContent('readme.md', 'test');
+	assert.fileContent('readme.md', 'testDescription');
 	t.pass();
 });
