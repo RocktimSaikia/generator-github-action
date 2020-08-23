@@ -53,13 +53,13 @@ module.exports = class extends Generator {
 			camelActionName: _s.camelize(this.props.actionName),
 			githubUserName: this.props.githubUserName,
 			email: this.user.git.email(),
-			website: this.props.website
+			normalizedWebsite: this.props.website
 		};
 
 		this.fs.copyTpl([`${this.templatePath()}/**`], this.destinationPath(), tpl);
 
-		mv('eslintignore', '.eslintignore');
-		mv('eslintrc.json', '.eslintrc.json');
+		mv('editorconfig', '.editorconfig');
+		mv('gitattributes', '.gitattributes');
 		mv('gitignore', '.gitignore');
 		mv('_package.json', 'package.json');
 		mv('_action.yml', 'action.yml');

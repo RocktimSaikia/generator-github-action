@@ -2,34 +2,36 @@
 	"name": "<%= actionName %>",
 	"version": "1.0.0",
 	"description": "<%= actionDescription %>",
-	"main": "index.js",
-	"scripts": {
-		"lint": "eslint .",
-		"prepare": "ncc build index.js -o dist --source-map",
-		"test": "jest --verbose",
-		"all": "npm run lint && npm run prepare && npm run test"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/<%= githubUserName %>/<%= actionName %>.git"
-	},
-	"keywords": ["GitHub", "Actions", "JavaScript"],
+	"license": "MIT",
+	"repository": "<%= githubUserName %>/actionName",
 	"author": {
 		"name": "<%= githubUserName %>",
 		"email": "<%= email %>",
-		"website": "<%= website %>"
+		"url": "<%= normalizedWebsite %>"
 	},
-	"bugs": {
-		"url": "https://github.com/<%= githubUserName %>/<%= actionName %>/issues"
+	"engines": {
+		"node": ">=8"
 	},
-	"homepage": "https://github.com/<%= githubUserName %>/<%= actionName %>#readme",
+	"xo": {
+		"ignore": "/dist/**"
+	},
+	"scripts": {
+		"lint": "xo index.js",
+		"build": "ncc build index.js -o dist --source-map"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"<%= actionName %>",
+		"github-action"
+	],
 	"dependencies": {
 		"@actions/core": "^1.2.4",
 		"@actions/github": "^4.0.0"
 	},
 	"devDependencies": {
 		"@vercel/ncc": "^0.23.0",
-		"eslint": "^7.4.0",
-		"jest": "^26.1.0"
+		"xo": "^0.33.0"
 	}
 }
