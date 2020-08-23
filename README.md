@@ -6,7 +6,6 @@
 
 <p align="center">
 <img src="https://github.com/rocktimsaikia/generator-github-action/workflows/build/badge.svg"/>
-<img alt="NPM" src="https://img.shields.io/npm/l/generator-github-action"/>
 <img alt="npm" src="https://img.shields.io/npm/v/generator-github-action"/>
 </p>
 
