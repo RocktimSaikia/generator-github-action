@@ -10,7 +10,7 @@
 </p>
 
 <p align="center"><a href="https://github.com/rocktimsaikia/generator-github-action"><img src="/.github/frame.png" height="400px"></a></p>
-<br/><br/>
+<br/>
 
 ## :zap: Installation
 > skip the first step if you already have yeoman installed globally.
