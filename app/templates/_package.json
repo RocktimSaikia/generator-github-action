@@ -10,28 +10,25 @@
 		"url": "<%= normalizedWebsite %>"
 	},
 	"engines": {
-		"node": ">=8"
+		"node": ">=10"
 	},
-	"xo": {
-		"ignore": "/dist/**"
-	},
+	"main": "index.js",
 	"scripts": {
-		"lint": "xo index.js",
-		"build": "ncc build index.js -o dist --source-map"
+		"lint": "eslint .",
+		"prepare": "ncc build index.js -o dist --source-map --license licenses.txt",
+		"test": "jest",
+		"all": "npm run lint && npm run prepare && npm run test"
 	},
-	"files": [
-		"index.js"
-	],
 	"keywords": [
 		"<%= actionName %>",
 		"github-action"
 	],
 	"dependencies": {
-		"@actions/core": "^1.2.4",
-		"@actions/github": "^4.0.0"
+		"@actions/core": "^1.2.5"
 	},
 	"devDependencies": {
-		"@vercel/ncc": "^0.23.0",
-		"xo": "^0.33.0"
+		"@vercel/ncc": "^0.25.1",
+		"eslint": "^7.4.0",
+		"jest": "^26.1.0"
 	}
 }

@@ -61,10 +61,12 @@ module.exports = class extends Generator {
 		mv('dist', 'dist');
 		mv('_action.yml', 'action.yml');
 		mv('_package.json', 'package.json');
-		mv('editorconfig', '.editorconfig');
+		mv('eslintignore', '.eslintignore');
+		mv('eslintrc.json', '.eslintrc.json');
 		mv('gitattributes', '.gitattributes');
 		mv('gitignore', '.gitignore');
 		mv('index.js', 'index.js');
+		mv('index.test.js', 'index.test.js');
 		mv('license', 'license');
 		mv('README.md', 'README.md');
 	}

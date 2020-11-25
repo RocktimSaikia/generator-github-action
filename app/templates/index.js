@@ -1,24 +1,21 @@
-'use strict';
+const core = require('@actions/core');
+const wait = require('./wait');
 
-const github = require('@actions/github');
 
-const run = async function () {
+// most @actions toolkit packages have async methods
+async function run() {
 	try {
-		const {repo: repoInfo} = github.context;
+		const ms = core.getInput('milliseconds');
+		core.info(`Waiting ${ms} milliseconds ...`);
 
-		console.log(repoInfo);
-		/*
-		  {
-			  owner: "RocktimSaikia",
-			  repo: "javascript-action-boilerplate"
-		  }
-		*/
+		core.debug((new Date()).toTimeString()); // debug is only output if you set the secret `ACTIONS_RUNNER_DEBUG` to true
+		await wait(parseInt(ms));
+		core.info((new Date()).toTimeString());
 
-		// Happy coding 🦄🦄🦄
+		core.setOutput('time', new Date().toTimeString());
 	} catch (error) {
-		console.log(error);
-		return -1;
+		core.setFailed(error.message);
 	}
-};
+}
 
 run();

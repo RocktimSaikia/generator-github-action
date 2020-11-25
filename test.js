@@ -16,14 +16,17 @@ test('generates expected files', t => {
 		'.github/',
 		'dist/index.js',
 		'dist/index.js.map',
+		'dist/licenses.txt',
 		'dist/sourcemap-register.js',
 		'action.yml',
-		'.editorconfig',
+		'package.json',
+		'.eslintignore',
+		'.eslintrc.json',
 		'.gitattributes',
 		'.gitignore',
 		'index.js',
+		'index.test.js',
 		'license',
-		'package.json',
 		'README.md'
 	]);
 	t.pass();
