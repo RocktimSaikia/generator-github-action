@@ -12,6 +12,10 @@
 <p align="center"><a href="https://github.com/rocktimsaikia/generator-github-action"><img src="/.github/frame.png" height="400px"></a></p>
 <br/>
 
+## :bulb: About
+This is a yeoman generator for the official [github action template](https://github.com/actions/javascript-action) for javascript provided by the Github team.
+<br/><br/>
+
 ## :zap: Installation
 > skip the first step if you already have yeoman installed globally.
 
@@ -25,9 +29,6 @@ Then generate your new project:
 ```bash
 yo github-action
 ```
-<br/><br/>
-## :bulb: What's included ?
-This is a yeoman generator for the official [github action template](https://github.com/actions/javascript-action) for javascript provided by the Github team.
 
 <br/><br/>
 ## License
