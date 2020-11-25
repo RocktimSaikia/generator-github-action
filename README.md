@@ -2,7 +2,7 @@
 
 <h1 align="center"> generator-github-action</h1>
 
-<p align="center">A yeoman generator for scaffolding your javascript <a href="https://github.com/features/actions">Github action</a></p>
+<p align="center">A yeoman generator for scaffolding your javascript <a href="https://github.com/actions/javascript-action">Github action</a></p>
 
 <p align="center">
 <img src="https://github.com/rocktimsaikia/generator-github-action/workflows/build/badge.svg"/>
@@ -27,10 +27,7 @@ yo github-action
 ```
 <br/><br/>
 ## :bulb: What's included ?
-This template was created for leveling up productivity and wasting less time on setting up boilerplate while creating a github action.
-This generator takes care of setting up the base environment and installing the bare minimum essential dependencies.
-
-> It uses this [bare minimum github action boilerplate][boilerplate] as it's base template
+This is a yeoman generator for the official [github action template](https://github.com/actions/javascript-action) for javascript provided by the Github team.
 
 <br/><br/>
 ## License
